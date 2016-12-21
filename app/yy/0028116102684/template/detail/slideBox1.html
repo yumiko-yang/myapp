@@ -1,0 +1,24 @@
+<ion-view id='sBox1'>
+    <ion-content>
+        <div class="card sBCard">
+            <p>{{silderBox[0].desc}}</p>
+            <div class="item item-images" style="text-align: center">
+                <img ng-src="{{silderBox[0].imgUrl}}" style="width:90%">
+            </div>
+            <span class="nowPrice"> {{silderBox[0].nowPrice|currency:"￥"}}</span><br>
+            <button class="button button-assertive" ng-click="add(silderBox[0])">加入购物车</button>
+        </div>
+            <div class="text">
+                <p class="myWord">评论区</p>
+                <div class="list">
+                    <div class="item" ng-repeat="item in silderBox[0].text">
+                        <div class="item item-avatar">
+                            <img ng-src="{{item.imgUrl}}" >
+                            <p>[{{item.nikename}}]</p>
+                            <p>{{item.word}}</p>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+    </ion-content>
+</ion-view>

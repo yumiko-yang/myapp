@@ -1,0 +1,45 @@
+<ion-view id="homeCart">
+    <ion-content>
+
+        <div class="list" >
+            <div class="item" ng-show="showMy">
+                <ul class="total">
+                    <li class="images">商品图片</li>
+                    <li class="desc">商品信息</li>
+                    <li class="style num">数量</li>
+                    <li class="style price">单价</li>
+                    <li class="style allPrice">总计</li>
+                </ul>
+            </div>
+
+            <div class="item" ng-repeat="item in addArry">
+                <ul class="total">
+                    <li class="images"><img ng-src="{{item.product.imgUrl}}" style="height:44px;width:44px;border-radius:44px"></li>
+                    <li class="desc">{{item.product.desc}}</li>
+                    <li class="style num"><span ng-click="reduce(item)">-</span>{{item.number}}<span ng-click="plus(item)">+</span></li>
+                    <li class="style price">{{item.product.nowPrice|currency:"￥"}}</li>
+                    <li class="style allPrice">{{item.product.nowPrice*item.number |currency:"￥"}}</li>
+                </ul>
+            </div>
+            <div class="hCpro" ng-hide="showMy">
+               <span class='prompt'> 您的购物车是空的，去逛逛吧 <a ui-sref="home.homeIndex">点我</a></span>
+
+            </div>
+            <button class="button hcBtn" ng-show="showMy" ng-click="openModal()">提交</button>
+        </div>
+    </ion-content>
+
+    <!--内联模板-->
+    <script id="views/modal.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-assertive">
+                <h1 class="title">订单反馈</h1>
+                <button class="button button-clear button-primary" ng-click="closeModal()">返回</button>
+            </ion-header-bar>
+
+            <ion-content class="padding">
+                <p>您的订单我们已经收到，您的订单号是102380840384</p>
+            </ion-content>
+        </ion-modal-view>
+    </script>
+</ion-view>

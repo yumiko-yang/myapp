@@ -1,0 +1,28 @@
+<ion-view id="firends">
+    <ion-content>
+        <p class="ftitle">陪伴是最好的告白</p>
+        <div class="list firlist">
+            <div class="item">
+                <img ng-src="{{newarry.imgUrl}}">
+                <div class="sblist">
+                    <p class="desc">{{newarry.desc}}</p>
+                    <p class="nowPrice">{{newarry.nowPrice|currency:"￥"}}</p>
+                    <button class="button button-assertive" ng-click="add(newarry)">加入购物车</button>
+                </div>
+            </div>
+        </div>
+         <div class="text">
+            <p class="myWord">评论区</p>
+            <div class="list">
+                <div class="item" ng-repeat="item in newarry.text">
+                    <div class="item item-avatar">
+                        <img ng-src="{{item.imgUrl}}">
+                        <p>[{{item.nikename}}]</p>
+                        <p>{{item.word}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

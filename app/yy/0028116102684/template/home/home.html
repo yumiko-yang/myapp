@@ -1,0 +1,19 @@
+
+
+<ion-view id="home_view">
+    <ion-tabs class="tabs-icon-top">
+        <ion-tab title="首页" icon-on="ion-ios-home assertive" icon-off="ion-ios-home" ui-sref="home.homeIndex">
+            <ion-nav-view name="homeIndex"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="每日特卖" icon-on="ion-ios-timer assertive" icon-off="ion-ios-timer" ui-sref="home.homeSpecial">
+            <ion-nav-view name="homeSpecial"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="购物车"  icon-on="ion-ios-cart assertive" icon-off="ion-ios-cart" ui-sref="home.homeCart">
+            <ion-nav-view name="homeCart"></ion-nav-view>
+        </ion-tab>
+        <span class="badge badge-assertive" style="position: absolute;left:69%;top:10px">{{total()}}</span>
+        <ion-tab title="我的" icon-on="ion-ios-person assertive" icon-off="ion-ios-person" ui-sref="home.homeMyself">
+            <ion-nav-view name="homeMyself"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

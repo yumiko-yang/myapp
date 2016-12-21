@@ -1,0 +1,98 @@
+a{text-decoration: none;color: #fffbec}
+
+ion-view{background: url("../images/bg4.jpeg") no-repeat center;}
+#view_box .slider{height:100%}
+#view_box .slider p{height:20px;width:20px;margin: 20px auto;font-size: 20px;color:#9e9e9e;animation: run 2s  6}
+#view_box .slider img{height:100%;width: 100%;opacity: .5}
+#view_box .first_slide{background:url("../images/silde.jpg")  no-repeat top/cover}
+#view_box .second_slide{background:url("../images/silde1.jpg")  no-repeat top/cover }
+#view_box .third_slide{background:url("../images/silde3.jpg") no-repeat top/cover}
+
+#view_box .slide-ion p{height:20px;width:20px;margin: 20px auto;font-size: 20px;
+    color: #000000;}
+#view_box .third_slide button{
+
+    margin: 0 auto;
+    width:150px;
+    height:50px;
+    background-color:#dca7a7;
+    color:#fffbec;
+    border-radius: 20px;
+    position:absolute;
+    bottom:50px;
+    left:50%
+
+}
+
+
+#home_view .home_page{height: 44px;background-color: #00B7FF;color: #fffbec;
+    text-align: center;line-height: 44px;opacity: .5;font-size: 18px;}
+#home_view .bar-light .button.button-clear{color:#9e9e9e}
+#home_view .tabs{ border-top:#fff;background-color:transparent;color:#483F4E; }
+#homeIndex .list {position:relative;margin:10% 2% 0 2%;border-radius: 5px}
+#homeIndex .list a{margin:0 0.5%;background-color:#fff;color:#5B86B1;display: inline-block;width:32%;padding:0 2%;overflow: hidden;border-radius: 5px;text-shadow: 0.5px 0 1px #ededed}
+#homeIndex .list a img{width:100%;box-shadow: 0px 2px 5px 0px #c0c0c0}
+#homeIndex .list p{text-align: center;width:250px;height:30px;line-height:30px;font-size:20px;color: #435471;;position: absolute;left: 0;top:-30px;right:0;margin:auto}
+#homeIndex .original{font-size: 12px;text-decoration:line-through;color: #9e9e9e}
+#homeIndex .nowPrice{color: #ef473a}
+#homeSpecial .title{text-align: center;color:#999999;font-size: 20px;padding: 5px 0}
+#homeSpecial .photos{vertical-align: top;width:100%;float: left;display: inline-block}
+#homeSpecial .original{font-size: 12px;text-decoration:line-through;color: #9e9e9e}
+#homeSpecial .nowPrice{color: #ef473a;font-size: 20px;}
+#homeSpecial .hSlist{width:45%;float: right; width : 45%;padding:2%}
+#homeSpecial .hIphotos{float: left;width:45%;}
+#homeSpecial .limTime{color: #ef473a;}
+#homeSpecial .desc{margin-bottom: 20px}
+#homeCart{background-color: #fff}
+#homeCart .total li{float: left;line-height: 44px;font-size:12px;padding-right:14%;}
+
+#homeCart .total .desc{width:30%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden}
+#homeCart .total span{margin:0 4px;border:1px solid silver;padding:0 2px}
+#homeCart .total .style{width:14%;text-align: center}
+
+#homeCart .hCpro{
+    background: #fff;
+    width: 100%;
+    height: 300px;
+    margin: 20% auto;}
+#homeCart .hCpro span{
+    display: block;
+    height:50px;
+    line-height:50px
+}
+#homeCart .hCpro a{
+
+    padding: 10px;
+    width: 50px;
+    background-color: red;
+    color: #fff;
+    }
+#hMself{background-color: transparent;}
+#homeCart .hcBtn{position: absolute;right:0;margin:10px;background-color: #FF0000;color: #fff;  }
+#hMself .item{background-color:transparent }
+#hMself p{margin:0}
+
+#hMself #hMbtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #F16C6C;
+}
+#hMself .nikename{text-align: center;line-height: 44px;height:44px;color:#999999}
+#hMself .color{background: #4cd964;opacity:0.5}
+#hMself .news .community{font-size:16px;color:#999999;line-height: 38px;height:40px;margin:0;padding:5px 0}
+#hMself .news .button{line-height: 15px;padding:5px 0}
+#sBox1 .nowPrice{color:red;font-size:30px;line-height:44px;}
+#sBox1 .sBCard{text-align: center}
+#sBox1 .sBCard p{height:20px;line-height:40px}
+#sBox1 p{margin-bottom:20px}
+#sBox1 .myWord{font-size:20px;color:#999}
+#sBox3 span{width:200px;height:44px}
+#sBox3 img{width:20%;vertical-align:top;float: left}
+#sBox3 .sblist{float: left;width:70%;margin-left:20px}
+#sBox3 .nowPrice{color:red;font-size:22px;margin-right:150px;line-height:44px;}
+#sBox3 .sale{height:44px;line-height: 44px;text-align: center;font-size:20px;color:#dca7a7}
+#firends .ftitle{height:44px;line-height: 44px;text-align: center;font-size:20px;color:#dca7a7}
+#firends .firlist{text-align: center}
+#firends .nowPrice{color:red;font-size:30px;line-height:44px;}
+#firends .myWord{font-size:20px;color:#999}

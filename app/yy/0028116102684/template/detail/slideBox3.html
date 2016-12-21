@@ -1,0 +1,14 @@
+<ion-view id="sBox3">
+    <ion-content>
+       <p class="sale">满188减100</p>
+        <div class="list">
+            <div class="item" ng-repeat="item in slideBox" ui-sref="home.firends" ng-click="detail(item)">
+                <img ng-src="{{item.imgUrl}}">
+                <div class="sblist">
+                    <p class="desc">{{item.desc}}</p>
+                    <p class="nowPrice">{{item.nowPrice|currency:"￥"}}</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
